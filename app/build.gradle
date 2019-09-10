@@ -31,7 +31,7 @@ dependencies {
 task check_git_submodule_version(type: Exec) {
     def root_dir = getRootDir()
     executable "sh"
-    args "$root_dir/script/git_submodule_version_checker.sh", "$root_dir"
+    args "$root_dir/git_submodule_version_checker/git_submodule_version_checker.sh", "$root_dir"
 
     ignoreExitValue true
 
